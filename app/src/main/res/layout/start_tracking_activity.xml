@@ -1,61 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#F5F5F5"
-    tools:context=".StartTrackingActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="start"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:text="Start Tracking"
-            android:textColor="#333333"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+    android:padding="16dp">
 
     <EditText
         android:id="@+id/editTextActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Activity"
-        android:background="#FFFFFF"
-        android:padding="10dp"
-        android:layout_marginBottom="16dp" />
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/editTextDuration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Duration (minutes)"
-        android:background="#FFFFFF"
-        android:padding="10dp"
-        android:inputType="number"
-        android:layout_marginBottom="16dp" />
+        android:inputType="number" />
 
     <Button
         android:id="@+id/buttonStart"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start"
-        android:textColor="#FFFFFF" />
+        android:text="Start Tracking" />
+
+    <TextView
+        android:id="@+id/textCaloriesBurned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="Calories Burned: 0" />
+
+    <TextView
+        android:id="@+id/textActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        tools:text="Activity: -" />
+
+    <TextView
+        android:id="@+id/textDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        tools:text="Duration: - minutes" />
+    <TextView
+        android:id="@+id/textSemangat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan" />
 
     <Button
         android:id="@+id/buttonBack"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back"
-        android:textColor="#FFFFFF" />
-
+        android:text="Back" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:contentDescription="@null"
+        android:src="@drawable/running" />
 
 </LinearLayout>

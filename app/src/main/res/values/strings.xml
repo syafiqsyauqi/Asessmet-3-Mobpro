@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Asessment 2</string>
+    <string name="app_name">Asessment 3</string>
+    <string name="channel_name">Updater</string>
+    <string name="channel_desc">Update data otomatis</string>
+    <string name="koneksi_error">Koneksi error</string>
+    <string name="notif_title">Fitnes Tracker!</string>
+    <string name="notif_text">Ayo hitung kebutuhan kalori mu.</string>
 </resources>
